@@ -10,12 +10,19 @@
 ## What I use?
 
 I use Python and some Csv files.
+  In python i use the following libs:
+    <ul>
+      <li> pandas </li>
+      <li> matplotlib </li>
+      <li> seaborn </li>
+    </ul>
+    
 
 ## What I do?
 
 First I get some NFL data, how musicians was singing on Super Bowl (number of musics played, audience, etc.), Super Bowl team's (winners, difference between teams in final, etc.) and TV (audience during Final, etc.).
 
-After this, i coding to create some graphs with plotlib to analyze some team's dominant performances, more musics played by a musician, etc and resolve issues as missing values.
+After this, i coding to create some graphs with 'matplotlib' to analyze some team's dominant performances, more musics played by a musician, etc and resolve issues as missing values.
 
 ## Main questions to be answer during coding
 
