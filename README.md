@@ -1,46 +1,46 @@
-# **Design Pattern Implementation**
-Implementação de 3 design pattern's para o trabalho.
-## **Factory**
-A exemplo do ***factory***, foi implementado a ["property"](https://github.com/wandreuscv/design-pattern-implementation/tree/master/src/com/designpattern/property) usando este pattern, ficou escalável e simples de incluir novos tipos de propriedade, podendo ainda modificar os tipos dos parâmetros passados em sua construção, como foi o caso com **bedRoomsQuantity** e **mainRoomSize**:
-```
-Property property;
-
-property =  new  House(propertySize, propertyValue, propertyType, bedRoomsQuantity);
-property =  new  Building(propertySize, propertyValue, propertyType, mainRoomSize);
-```
-
-## **Bridge**
-A exemplo do ***bridge***, foi implementado a ["tax"](https://github.com/wandreuscv/design-pattern-implementation/tree/master/src/com/designpattern/tax) usando este pattern. Usando o ***bridge*** foi possível separar classes que possuem dimensões/propósitos diferentes, no caso a do "valor da taxa de imposto" do imóvel de suas "características e dados":
-
 <p align="center">
-  <img width="500" height="250" style="align=center;" src="https://github.com/wandreuscv/design-pattern-implementation/blob/master/Temp/Diagrama_BRIDGE.png?raw=true">
+  <img width="200" height="200" style="align=center;" src="https://cdn.freebiesupply.com/logos/large/2x/nfl-1-logo-png-transparent.png">
 </p>
 
-## **Strategy**
-A exemplo do ***strategy***, foi implementado a ["owner"](https://github.com/wandreuscv/design-pattern-implementation/tree/master/src/com/designpattern/owner) usando esse pattern. Usando este pattern, foi possível modificar o comportamento do programa de forma simples, tornando os objetos intercambiáveis:
-```
-// IMPLEMENTATION - Property Class
+#### Project was made with DataCamp
 
-OwnerInterface owner;
-
-@Override
-public void setOwnerType(OwnerInterface owner) {
-	this.owner = owner;
-}
-
-// CALLING - Main
-
-if (insertion.nextBoolean()){
-	property.setOwnerType(new Physical());
-} else{
-	property.setOwnerType(new Juridical());
-}
-```
+<h1 style"align-text=center;"> Project: Super Bowl Analytics </h1>
+ A simple project about Data Manipulation to answer some questions about Super Bowl using his data.
  
-## **Integrantes do Trabalho**
+## What I use?
 
- - yagohsp = Yago Henrique dos Santos Pacheco
- - wandreuscv = Wandreus Caetano Vieira
+I use Python and some Csv files.
+  In python i use the following libs:
+    <ul>
+      <li> pandas </li>
+      <li> matplotlib </li>
+      <li> seaborn </li>
+    </ul>
+    
 
->  Professor: FILIPE GUELBER MELO
->  Matéria: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+## What I do?
+
+First I get some NFL data, how musicians was singing on Super Bowl (number of musics played, audience, etc.), Super Bowl team's (winners, difference between teams in final, etc.) and TV (audience during Final, etc.).
+
+After this, i coding to create some graphs with 'matplotlib' to analyze some team's dominant performances, more musics played by a musician, etc and resolve issues as missing values.
+
+## Main questions to be answer during coding
+
+  <ul>
+    <li>Point difference between team's during final</li>
+      <ul>
+        <li> What's the minor difference? </li>
+        <li> What's the biggest difference? </li>
+      </ul>
+    <li>Do blowouts translate to lost viewers?</li>
+      <ul>
+        <li> Is when the difference is minor the audience its biggest? </li>
+      </ul>
+    <li>Ad industry during Super Bowl (Tv)</li>
+      <ul>
+        <li> Is Ad costs turned biggest on these days? </li>
+      </ul>
+    <li>Can musician shows influence on Super Bowl audience?</li>
+    <li>Who is the musician have most apparences on Super Bowl?</li>
+    <li>Who singed more songs? (Except bands)</li>
+  </ul>
